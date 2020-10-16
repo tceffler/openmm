@@ -43,8 +43,7 @@ bsub -W 2:00 -nnodes 1 -P bip198 -alloc_flags gpudefault -Is /bin/bash
 conda activate openmm
 
 # Load the CUDA and appropriate MPI modules:
-module unload cuda
-module load cuda/10.1.105 gcc/8.1.1 spectrum-mpi/10.2.0.10-20181214
+module load cuda/10.1.105 gcc/8.1.1
 
 # Run the benchmark via jsrun requesting
 # one resource set (-n 1), one MPI process (-a 1), one core (-c 1), one GPU (-g 1)
